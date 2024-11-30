@@ -191,6 +191,20 @@ class App extends CI_Controller {
         }
     }
 
+    public function download_template($filename) {
+
+		$file_path = './uploads/template/' . $filename;
+
+        // Check if the file exists
+        if (file_exists($file_path)) {
+            // Force the download using the download helper
+            force_download($file_path, NULL);  // The second parameter as NULL forces download
+        } else {
+            // If the file does not exist, show an error message
+            show_404();  // Display a 404 error if the file is not found
+        }
+    }
+
     function send_message($data=false)
     {
     	$msg = $this->input->post('msg');

@@ -99,7 +99,7 @@
 							<a class="flex-shrink-0 flex-shrink-0 me-2" href=""></a>
 							<!--end::Link-->
 							<!--begin::Link-->
-							<a class="btn btn-sm btn-info flex-shrink-0" href="<?=base_url('app/download_image/'.$kit['filename'])?>">Download</a>
+							<a class="btn btn-sm btn-info flex-shrink-0" href="<?=base_url('app/download_template/'.$kit['filename'])?>">Download</a>
 							<!--end::Link-->
 						</div>
 						<!--end::Footer-->
